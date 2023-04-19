@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  
 <head>
   <meta charset="UTF-8">
   <title>Home Page</title>
@@ -7,18 +8,25 @@
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-  <header>
+  <header>    
     <nav>
+      <div class="nav-left">
+        <p>QuickTix</p>
+        <img id="search-icon" src="src/search.png" alt="search-icon">
+        <form id="search">
+          <input type="search" placeholder="Search...">
+        </form>
+      </div>
       <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="#">User Info <span class="user-icon"></span></a></li>
+        <li id="login-link"><a href="login.html">Log in</a></li>
+        <li><a href="user.html">User<span class="user-icon"></span></a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Welcome to our website!</h1>
-    <p>Here you can find all the events happening near you.</p>
-    <button>Find Your Event</button>
+    <h1>Welcome!</h1>
+    <p>Here you can find all events happening near you.</p>
+    <button onclick="window.location.href = 'find-event.html';">Find your event</button>
   </main>
 </body>
 </html>

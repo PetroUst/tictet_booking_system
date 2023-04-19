@@ -1,0 +1,155 @@
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("../src/gs_main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+.searcher {
+  float: left;
+  display: flex;
+  align-items: center;
+  order: -1;
+}
+
+h2 {
+  color: #007bff;
+  text-align: center;
+}
+
+input[type=search] {
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+  width: 500px;
+}
+
+main {
+  margin: 100px auto;
+  max-width: 700px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  animation: slide-in 1s ease-out;
+}
+
+.city-list {
+  list-style: none;
+  border-radius: 20px;
+}
+
+.city-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.city-list li:hover {
+  background-color: #eee;
+  color: #007bff;
+}
+
+.list-events {
+  margin-top: 100px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+li .row-container {
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+li p {
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.row-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+
+.input-val {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input-val label {
+  display: block;
+  flex: 1;
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.input-val input[type=text],
+.input-val input[type=email],
+.input-val input[type=password],
+.input-val input[type=datetime-local],
+.input-val input[type=number] {
+  flex: 2;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0062cc;
+}/*# sourceMappingURL=find-event.css.map */

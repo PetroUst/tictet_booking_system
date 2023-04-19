@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <header>    
+        <nav>
+          <div class="nav-left">
+            <p>QuickTix</p>
+            <img id="search-icon" src="src/search.png" alt="search-icon">
+            <form id="search">
+              <input type="search" placeholder="Search...">
+            </form>
+          </div>
+          <ul>
+            <li id="login-link"><a href="login.html">Log in</a></li>
+            <li><a href="user.html">User<span class="user-icon"></span></a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <div id="user-data">
+            <h1>Your personal data</h1>
+            <div class="row-container">
+                <p class = "field-name">Username</p>
+                <p class = "value">PetroUst</p>
+            </div>
+            <div class="row-container">
+                <p class = "field-name">Name</p>
+                <p class = "value">Petro</p>
+            </div>
+            <div class="row-container">
+                <p class = "field-name">Surname</p>
+                <p class = "value">Ustianchuk</p>
+            </div>
+            <div class="row-container">
+                <p class = "field-name">Email</p>
+                <p class = "value">petro_ust21@gmail.com</p>
+            </div>
+        </div>
+        <div id="user-tickets">
+            <h2>Your current tickets</h2>
+            <ul class="list-tickets">
+                <li class="ticket-item">
+                    <div class="row-container">
+                        <p>Event:</p>
+                        <p class="event-name">StAnDuP LviV</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Time:</p>
+                        <p class="date-time">17:00, 20 May 2023</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Location:</p>
+                        <p class="location">Pub "Good Friend 1, Lviv"</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Price:</p>
+                        <p class="price">20$</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Status:</p>
+                        <p class="state">Booked</p>
+                    </div>
+                </li>
+                <li class="ticket-item">
+                    <div class="row-container">
+                        <p>Event</p>
+                        <p class="event-name">IT Arena</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Time</p>
+                        <p class="date-time">13:00, 25 May 2023</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Location</p>
+                        <p class="location">Arena Lviv, Lviv"</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Price</p>
+                        <p class="price">120$</p>
+                    </div>
+                    <div class="row-container">
+                        <p>Status</p>
+                        <p class="state">Paid</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

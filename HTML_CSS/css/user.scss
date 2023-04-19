@@ -1,0 +1,105 @@
+@import "variables";
+
+// Define styles
+
+*{
+box-sizing: border-box;
+}
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+body {
+background-image: url("../src/gs_main.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+font-family: $font-family;
+background-color: #000;
+}
+
+main {
+    margin: 100px auto;
+    max-width: 700px;
+    padding: 40px;
+    background-color: $background-color;
+    border-radius: 5px;
+    text-align: left;
+    animation: slide-in 1s ease-out;
+
+}
+h1{
+    color: $primary-color;
+    font-size: 1.5rem;
+}
+.user-data{
+    align-items: center;
+    margin-bottom: 300px;
+}
+.row-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    // background-color: gray;
+    margin-bottom: 0px;
+}
+.field-name {
+font-size: 1.2rem;
+flex:1;
+padding: 10px;
+color: $secondary-color ;
+border: none;
+margin-bottom: 0;
+text-align: left;
+}
+
+.value {
+width: 50%;
+flex:3;
+padding: 10px;
+font-size: 1.2rem;
+margin-bottom: 0;
+border: none;
+border-radius: 5px;
+background-color: $primary-text-color;
+}
+
+h2{
+    color: $primary-color;
+    padding-top: 40px;
+    font-size: 1.5rem;
+}
+ul{
+    list-style:none;//make none
+    padding-left: 0;
+}
+
+li{
+    .row-container{
+    background-color: $primary-text-color;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    // background-color: gray;
+    margin-bottom: 0px;
+}
+    p {
+    font-size: 1.2rem;
+    flex:1;
+    padding: 10px;
+    border: none;
+    margin-bottom: 0;
+    text-align: left;
+    }
+margin-bottom: 10px;   
+}
+@media only screen and (max-width: 700px) {
+    main {
+    max-width: 500px;
+    }
+}
+

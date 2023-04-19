@@ -27,9 +27,15 @@ body {
   background-color: #000;
 }
 
+h1 {
+  font-size: 2rem;
+  color: #007bff;
+  margin: 30px;
+}
+
 form {
   margin: 50px auto;
-  max-width: 500px;
+  max-width: 700px;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -37,15 +43,26 @@ form {
   animation: slide-in 1s ease-out;
 }
 
-label {
+div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+div label {
   display: block;
+  flex: 1;
   font-size: 1.5rem;
   color: #000000;
   margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left;
 }
-
-input {
+div input[type=text],
+div input[type=email],
+div input[type=password],
+div input[type=datetime-local],
+div input[type=number] {
+  flex: 2;
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -72,7 +89,7 @@ button:hover {
 
 p {
   font-size: 1.2rem;
-  color: #95aeb1;
+  color: #000000;
   margin-top: 20px;
 }
 
@@ -86,9 +103,17 @@ a:hover {
   color: #0062cc;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   form {
     margin-top: 100px;
-    margin: 50px;
+    max-width: 400px;
   }
-}/*# sourceMappingURL=login.css.map */
+  label {
+    flex: 1;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    flex: 2;
+  }
+}/*# sourceMappingURL=add-event.css.map */

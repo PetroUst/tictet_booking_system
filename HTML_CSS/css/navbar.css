@@ -8,25 +8,6 @@
     transform: translateY(0);
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  background-image: url("../src/gs_main.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  background-color: #000;
-}
-
 nav {
   background-color: #fff;
   color: #000;
@@ -107,38 +88,6 @@ nav a:hover {
   border-radius: 50%;
 }
 
-main {
-  margin-top: 150px;
-  text-align: center;
-  animation: slide-in 1s ease-out;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #007bff;
-}
-
-main p {
-  font-size: 1.5rem;
-  color: #007bff;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #0062cc;
-}
-
 @media screen and (max-width: 600px) {
   nav {
     align-items: flex-end;
@@ -167,17 +116,4 @@ button:hover {
   #login-link {
     display: none;
   }
-  main {
-    margin-top: 150px;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  main p {
-    font-size: 1.2rem;
-  }
-  button {
-    font-size: 1.2rem;
-    padding: 8px 16px;
-  }
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=navbar.css.map */

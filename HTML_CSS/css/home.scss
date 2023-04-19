@@ -1,19 +1,7 @@
 // Define variables
-$primary-color: #007bff;
-$secondary-color: #ffffff;
-$font-family: Arial, sans-serif;
-
+@import "variables.scss";
 // Define animations
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 // Define styles
 * {
@@ -39,9 +27,9 @@ nav {
   background-color: #fff;
   color: #000;
   display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  padding: 10px 20px;   
+ justify-content: flex-end;
+  text-align: right;  
+  padding: 0px 20px;   
   position: fixed;
   top: 0;
   left: 0;
@@ -51,11 +39,44 @@ nav {
 }
 
 nav ul {
+  // float: right;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+}
+.nav-left  {
+  margin-right: auto;
+  float: left;
+  display: flex;
+  align-items: center;
+  order: -1;
+  p{
+  color: $primary-color;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  }
+  #search-icon{
+    width: 24px;
+  }
+  
+  
+}
+input[type="search"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input[type="search"]:focus {
+  background-color: $background-color;
 }
 
 nav li {
@@ -84,7 +105,7 @@ nav a:hover {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
   animation: slide-in 1s ease-out;
 }
@@ -95,9 +116,9 @@ h1 {
   color: $primary-color;
 }
 
-p {
+main p {
   font-size: 1.5rem;
-  color: $secondary-color;
+  color: $primary-color;
 }
 
 button {
@@ -116,14 +137,26 @@ button:hover {
 }
 
 // Media queries
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   nav {
-    flex-direction: column;
+    // flex-direction: column;
     align-items: flex-end;
   }
-  
+
+  .nav-left{
+    p{
+      font-size: 1.2rem;
+    }
+  } 
+  #search-icon{
+    display: none;
+  }
   nav li {
     margin: 10px 0;
+  }
+  input[type="search"]{
+    width: 150px;
+    font-size: 0.8rem;
   }
   
   nav a {
@@ -135,16 +168,19 @@ button:hover {
   .user-icon {
     display: none;
   }
-  
-  main {
-    margin-top: 80px;
+  #login-link{
+    display: none;
   }
+  
+   main {
+    margin-top: 150px;
+   }
   
   h1 {
     font-size: 2rem;
   }
   
-  p {
+  main p {
     font-size: 1.2rem;
   }
   
